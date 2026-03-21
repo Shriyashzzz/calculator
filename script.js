@@ -99,10 +99,9 @@ function getResult(){
     }
 
     if(!checkForError(result)){
-        mathStack.push(parseFloat(displayBox.value).toFixed(3))
-        evaluated = true;    
+        evaluated = true;  
+        mathStack.push(parseFloat(result).toFixed(3))
         result != undefined ? displayBox.value = result :displayBox.value = "Error" 
-
     }
     console.log(mathStack)
 }
@@ -121,8 +120,11 @@ function checkForError(result){
 }
 
 function deleteStroke(){
-    console.log(mathStack)
-     displayBox.value = displayBox.value.slice(0, displayBox.value.length-1)
+    if(parseFloat(displayBox.value).toFixed(3) == mathStack.pop()){
+        clearBox();
+    }else{
+        displayBox.value = displayBox.value.slice(0, displayBox.value.length-1)
+    }
 }
 
 function setDotToggele(givenBoolean){
