@@ -29,10 +29,10 @@ function operate(numa,operator,numb){
     }
 }
 
-let mathStack =[]
+const mathStack =[]
 let evaluated = false;
-let numericButtons = document.querySelectorAll(".numButton")
-let displayBox = document.querySelector(".displayBox")
+const numericButtons = document.querySelectorAll(".numButton")
+const displayBox = document.querySelector(".displayBox")
 
 numericButtons.forEach((element) => {
     element.addEventListener('click', function(e){
@@ -44,7 +44,7 @@ numericButtons.forEach((element) => {
     })
 });
 
-let operateButton = document.querySelectorAll(".operator")
+const operateButton = document.querySelectorAll(".operator")
 operateButton.forEach((element) => {
     element.addEventListener('click', function(e){
         evaluated = false;
@@ -64,20 +64,20 @@ document.addEventListener('keydown', (event) => {
 
 
 
-let equalsbtn = document.querySelector(".equalsButton")
+const equalsbtn = document.querySelector(".equalsButton")
 equalsbtn.addEventListener('click', getResult)
 
 const operaterList = ["+","-", "/", "*"];
 
-let clearBtn = document.querySelector(".clearButton")
+const clearBtn = document.querySelector(".clearButton")
 clearBtn.addEventListener('click', clearBox)
 
 
-let deleteBtn = document.querySelector('.deleteButton');
+const deleteBtn = document.querySelector('.deleteButton');
 deleteBtn.addEventListener('click' ,deleteStroke)
 
 
-let dotBtn = document.querySelector(".dotButton")
+const dotBtn = document.querySelector(".dotButton")
 dotBtn.addEventListener('click', ()=>{
     checkIfdotBtn()
     displayBox.value += dotBtn.textContent; 
@@ -163,13 +163,3 @@ function checkIfdotBtn(){
 
 
 
-const toggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
-
-toggle.addEventListener('change', () => {
-  if (toggle.checked) {
-    body.classList.add('dark-mode');
-  } else {
-    body.classList.remove('dark-mode');
-  }
-});
