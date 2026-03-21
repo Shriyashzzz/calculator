@@ -8,47 +8,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js" defer></script>
 </head>
 <body id = "webpage">
     <main id = "mainContainer">
         <div>
-            <input type = "text" name = "outputBox" class = "inputBox">
+            <input type = "text"  class = "displayBox">
 
         </div>    
         <section id = "content">
             <div id = "leftButtons">
                 <div class="leftButtonsContainer">
-                    <button class = "button"> 9</button>
-                    <button class = "button"> 8</button>
-                    <button class = "button"> 7</button>   
+                    <button class = "numButton button">9</button>
+                    <button class = "numButton button">8</button>
+                    <button class = "numButton button">7</button>   
                 </div>
                
                 <div class="leftButtonsContainer">
-                    <button class = "button"> 6</button>
-                    <button class = "button">5 </button>
-                    <button class = "button"> 4</button>
+                    <button class = "numButton button">6</button>
+                    <button class = "numButton button">5</button>
+                    <button class = "numButton button">4</button>
                 </div>
 
                 <div class="leftButtonsContainer">
-                    <button class = "button">3 </button>
-                    <button class = "button"> 2</button>
-                    <button class = "button"> 1</button>
+                    <button class = "numButton button">3</button>
+                    <button class = "numButton button">2</button>
+                    <button class = "numButton button">1</button>
                 </div>
                 
 
                 <div class="leftButtonsContainer">
-                    <button class = "button">Delete</button>
-                    <button class = "button">. </button>
-                    <button class = "button">0 </button>
+                    <button class = "button deleteButton">Delete</button>
+                    <button class = "button dotButton ">.</button>
+                    <button class = "numButton button zeroButton" >0</button>
                 </div>
             </div>
             <div id = "rightButtons">
-                <button class = "button-49"> Clear </button>
-                <button class = "button"> * </button>
-                <button class = "button"> / </button>
-                <button class = "button"> - </button>
-                <button class = "button"> + </button>
-                <button class = "button"> = </button>
+                <button class = "button-49 clearButton"> Clear </button>
+                <button class = "button multiplybutton operator">*</button>
+                <button class = "button divideButton operator">/</button>
+                <button class = "button subtractButton operator">-</button>
+                <button class = "button addButton operator">+</button>
+                <button class = "button equalsButton">=</button>
 
             </div>
 
@@ -57,7 +58,7 @@
     </main>
     <footer class = "footer">
         <a href="https://github.com/Shriyashzzz/calculator" target ="_blank">
-        <img src = "github.png" alt = "Github logo" class=" github-logo" >
+        <img src = "logos\github.png" alt = "Github logo" class=" github-logo" >
         </a>
     </footer>
 </body>
