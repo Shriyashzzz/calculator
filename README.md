@@ -1,11 +1,12 @@
 # Calcultor
+
 classic calculator project haha, had to do it
 
 
-A classic calculator built with HTML, CSS, and vanilla JavaScript — no frameworks or libraries.
+Built with HTML, CSS, and vanilla JavaScript — no frameworks or libraries.
 
 
-Take a look at it live :
+Take a look at it live : https://shriyashzzz.github.io/calculator/
 
 ## Built With
 
