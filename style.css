@@ -1,0 +1,225 @@
+
+#webpage{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    margin:0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp10311397.jpg');
+    
+}
+
+#mainContainer{
+    height: 500px;
+    width : 372px;
+    background-color: #89AAE6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    gap:20px;
+    border-radius: 20px;
+    margin:auto;
+}
+
+#content{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:60%;
+
+}
+
+
+#leftButtons{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 60%;      
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    gap:42px;
+    margin-left: 40px
+
+}
+
+
+#rightButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    gap: 11px;
+    
+
+
+/* pulled from the web */
+}
+.button-49,
+.button-49:after {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #5B5F97 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #8A7968;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  padding: 2px;
+  margin: 2px;
+  
+  border-radius: 4px;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'EXTERMINATE';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #2E5266 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% { clip-path: var(--slice-1); transform: translate(-20px, -10px); }
+  10% { clip-path: var(--slice-3); transform: translate(10px, 10px); }
+  20% { clip-path: var(--slice-1); transform: translate(-10px, 10px); }
+  30% { clip-path: var(--slice-3); transform: translate(0px, 5px); }
+  40% { clip-path: var(--slice-2); transform: translate(-5px, 0px); }
+  50% { clip-path: var(--slice-3); transform: translate(5px, 0px); }
+  60% { clip-path: var(--slice-4); transform: translate(5px, 10px); }
+  70% { clip-path: var(--slice-2); transform: translate(-10px, 10px); }
+  80% { clip-path: var(--slice-5); transform: translate(20px, -10px); }
+  90% { clip-path: var(--slice-1); transform: translate(-10px, 0px); }
+  100% { clip-path: var(--slice-1); transform: translate(0); }
+}
+/* pulled from the web */
+.button {
+  appearance: button;
+  background-color: #577399;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #847577  4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto",Arial,sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+   width: 60px;
+    height: 35px;   
+    padding: 2px;
+    margin: 2px; 
+}
+
+.button:focus {
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button:not():active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+
+
+
+.inputBox{
+    box-sizing: border-box;
+    display: flex;
+    width: 300px;  
+    height: 40px;  
+    background-color: #313638;
+    color: white;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: wavy;
+    font-family: "Press Start 2P", sans-serif;
+    border: 2px solid black; 
+}
+
+.leftButtonsContainer{
+    display: flex;;
+    gap:10px;
+;
+}
+
+.footer{
+    display: flex;
+    color:white;    
+    margin-top: 2rem; 
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    background-color: #061826;
+    width: 100vw;
+    gap:10px;
+
+}
+
+.github-logo{
+    max-width:100%;
+    height: 30px;
+    
+}
+
+
+
