@@ -238,6 +238,7 @@ img {
     color:white;    
     justify-content: center;
     text-align: center;
+    text-wrap-style: pretty;
     align-items: center;
     flex-direction: row;
     background-color: #061826;
@@ -245,11 +246,13 @@ img {
     margin:0px;
     text-decoration:wavy;
     font-family: "Press Start 2P", sans-serif;
+    font-size: 0.7rem;
 }
 
 .github-logo{
     height: 30px;
-    margin-right: 10px;; 
+    margin :8px;
+    
 }
 
 
