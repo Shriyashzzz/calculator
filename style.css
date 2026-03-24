@@ -1,3 +1,27 @@
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+
 
 #webpage{
     display: flex;
@@ -213,9 +237,9 @@
     display: flex;
     color:white;    
     justify-content: center;
+    text-align: center;
     align-items: center;
     flex-direction: row;
-    min-height: auto;
     background-color: #061826;
     width: 100vw;
     margin:0px;
@@ -224,10 +248,8 @@
 }
 
 .github-logo{
-    max-width:100%;
     height: 30px;
-    margin-right: 10px;;
-    
+    margin-right: 10px;; 
 }
 
 
